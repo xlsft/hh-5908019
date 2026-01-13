@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: "Google Sans", sans-serif;
+    user-select: none;
 }
 
 body {
