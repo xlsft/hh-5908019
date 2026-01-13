@@ -1,12 +1,12 @@
 <script setup lang="ts">
     import { useStatic } from '../composables/useStatic';
-    import type { Item } from '../types/item.types';
+    import type { ItemType } from '../types/item.types';
 
     const props = defineProps<{
         entity: 'user' | 'bot'
     }>()
 
-    const data = await useStatic<Item>(`${props.entity}.inventory`)
+    const data = await useStatic<ItemType>(`${props.entity}.inventory`)
 </script>
 
 <template>
@@ -16,11 +16,6 @@
 </template>
 
 <style scoped>
-    h2 {
-        position: absolute;
-        left: 12px;
-    }
-
     .inventory {
         position: relative;
         flex-grow: 1;

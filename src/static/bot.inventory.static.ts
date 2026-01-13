@@ -1,4 +1,4 @@
-import type { Item } from "../types/item.types";
+import type { ItemType } from "../types/item.types";
 
 export default [
     {
@@ -33,4 +33,4 @@ export default [
         "id": 18,
         "name": "Hoodie 4"
     }
-] as const as Item[]
+] as const as ItemType[]
